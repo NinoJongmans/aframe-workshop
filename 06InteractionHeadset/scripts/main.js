@@ -30,18 +30,18 @@ myOtherBox.addEventListener('mouseleave', function(){
 
  var growspeed = -2.2;
 
- function grow(){
+ function opacity(){
 // 	myOtherBox.object3D.scale.x *= growspeed;
 // 	myOtherBox.object3D.scale.y *= growspeed;
 // 	myOtherBox.object3D.scale.z *= growspeed;
      
      
      myOtherBox.components.material.material.opacity = 0.5;
-     myOtherBox.components.src = '#wood2';
+     myOtherBox.components.material.material.src = '#wood1';
  	//console.log(myOtherBox.object3D.scale);
  }
 
  myOtherBox.addEventListener('click', function(){ // uses a fuse
- 	grow();
- 	console.log('grew');
+ 	opacity();
+ 	console.log('opacity changed');
  });
